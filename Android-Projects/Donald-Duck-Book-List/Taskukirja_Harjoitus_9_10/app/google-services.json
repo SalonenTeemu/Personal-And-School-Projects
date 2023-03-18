@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "146476891712",
+    "project_id": "mob-ohj-harjoitus-9-ja-10",
+    "storage_bucket": "mob-ohj-harjoitus-9-ja-10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146476891712:android:d6410a1a2bae18befae9a5",
+        "android_client_info": {
+          "package_name": "com.example.taskukirja_harjoitus_9_10"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "146476891712-flb1qmuifecifdtuoij4a0b5c8rvtllq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoolRQf7EchPUN6S-pKWmlfngLQtgSLRA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "146476891712-flb1qmuifecifdtuoij4a0b5c8rvtllq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

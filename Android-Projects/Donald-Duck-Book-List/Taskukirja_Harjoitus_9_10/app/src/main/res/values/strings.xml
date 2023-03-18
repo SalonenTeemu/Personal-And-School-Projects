@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Aku Ankka-taskukirjakokoelma</string>
+    <string name="add_word">Lisää</string>
+    <string name="add_Button">Uusi</string>
+    <string name="del_all_Button">Poista kaikki</string>
+    <string name="del_Button">Poista klikattu</string>
+    <string name="help_button">Apua</string>
+    <string name="del_searched">Poista haulla</string>
+    <string name="title_activity_register">RegisterActivity</string>
+</resources>

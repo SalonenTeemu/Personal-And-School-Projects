@@ -1,0 +1,177 @@
+Pelin 2048 ohjetiedosto
+
+Nimi: Teemu Salonen
+Opiskelijanumero: K444339
+Käyttäjätunnus: nctesa
+E-Mail: teemu.t.salonen@tuni.fi
+
+PELIN KUVAUS JA SÄÄNNÖT:
+
+Ohjelma toimii pelinä 2048. Sen toiminnallisuus on toteutettu luokkien Gameboard ja
+Numbertile avulla. Luokassa Mainwindow on toteutettu peliin liittyvä graafinen käyttöliittymä.
+Ohjelmalla on lisäksi resurssikansio Resources, jossa on kuvatiedostoja graafista 
+käyttöliittymää varten. Pelin idea on se, että käyttäjä valitsee voittoarvon, joka on 
+default arvona 2048. Käyttäjä liikuttaa laattoja ja kahden saman arvoisen laatan yhdistyessä 
+niiden arvo kaksinkertaistuu. Jokaisella siirrolla lisätään satunnaisesti yksi arvo (2) 
+pelilaudalle lisää. Käyttäjän tulee yhdistellä laattoja siten, että hän saavuttaa voittoarvon. 
+Hän häviää jos pelilauta täyttyy ruuduista. Voittoarvon maksimiluku lasketaan peliruudukon koon 
+avulla kaavalla 2^⁽n*n), jossa n on ruudun sivun pituus. Jos peliruudukko on kooltaan 4x4, niin
+teoreettinen maksimiarvo on siis 2^(4*4) = 2^16 = 65536. Default arvo 2048 on siis 2^11 = 2048.
+-------------------------------------------------------------------------------------------------------------
+PELIN RAKENNE:
+
+Pelin toiminnallisuus on toteutettu luokissa Gameboard ja Numbertile. Graafinen
+käyttöliittymä on toteutettu luokassa Mainwindow. Staattiset elementit, kuten
+siemenluvun spibox- elementti, on toteutettu mainwindow.ui tiedostossa gridlayout
+rakenteiden avulla ja alustettu koodissa metodissa setup_widgets. Dynaamiset elementit, 
+kuten pelilauta on toteutettu kokonaan koodissa esim. metodissa create_board.
+Pelissä käytetään vapaasti käytettävää nuoli png-kuvaa siirtonapeissa, joka on ladattu osoitteesta:
+ 
+https://toppng.com/free-image/red-arrow-right-png-PNG-free-PNG-Images_402748https://toppng.com/free
+-image/red-arrow-right-png-PNG-free-PNG-Images_402748 
+
+Kaikki napit on toteutettu tästä kuvasta, kuvaa on vain kierretty. Kuvat löytyvät
+ohjelman resurssikansiosta Resources.
+
+Luokkiin Numbertile ja Gameboard on tehty muutamia muutoksia ja lisäyksiä, jotka
+kuvataan, kun käydään läpi ohjelman toteutetut minimi- ja lisävaatimukset ja niiden toiminta.
+-------------------------------------------------------------------------------------------------------------
+MINIMIVAATIMUSTEN TOTEUTUS:
+
+Siemenluvun kysyminen:
+
+Siemenluku kysytään käyttäjältä spinBox-elementin seed_spinbox avulla. Sen range on asetettu 
+välille 1-99 ja alkuarvo arvoksi 1. Pelin ollessa käynnissä elementtiä ei voi muokata, 
+vaan se asetetaan disabled tilaan. Kun peli aloitetaan, siemenluku toimitetaan Gameboard-luokan oliolle.
+
+Tavoiteluvun kysyminen:
+
+Tavoiteluku kysytään käyttäjältä spinBox-elementin goal_spinbox avulla. Tavoite asetetaan
+spinboxiin kakkosen potenssina, jottei mahdollisia virhearvoja ei tarvitse tarkastaa, esimerkiksi
+arvo 2048 saadaan asettamalla spinboxiin arvo 11, koska 2^11 = 2048. Sen range on asetettu 
+välille 2 - (SIZE * SIZE), jossa SIZE on sivun pituus, jolloin SIZE * SIZE on teoreettinen
+maksimiarvo tavoitearvolle. Alkuarvo goal_spinboxilla on 11 = 2048. Peli aloitettaessa asetettu
+tavoiteluku asetetaan attribuuttiin goal_value_. Pelin ollessa käynnissä elementtiä ei voi muokata, 
+vaan se asetetaan disabled tilaan. Kun pelin aikana liikutetaan laattoja move-metodilla, tavoiteluku
+toimitetaan Gameboard-luokan oliolle.
+
+Peliruudukon toteutus:
+
+Peliruudukko on toteutettu GraphicsScenellä ja GraphicsView-elementillä, joihin on liitetty 
+suorakulmioita (Rect). Ruuduissa esiintyvät luvut on toteutettu Label-elementeillä. Nämä kaikki on
+tallennettu vektoreihin tiles_ ja labels_. Peliruudukko toteutetaan metodissa create_board.
+Peliruudukon ja laattojen kokoon liittyy vakioarvot BOARD_X_AND_Y, joka kuvaa ruudun alkupisteen,
+BOARD_WIDTH_AND_HEIGHT, joka kuvaa ruudukon leveyden ja korkeuden (on aina vakio, vaikka ruutujen
+määrää muokattaisiin SIZE-vakiota muuttamalla), sekä TILE_SIZE, joka kuvaa yhden laatan kokoa ja se
+lasketaan ruudukon koon ja laaattojen määrän avulla. Peliruudukkon mahdolliset scrollbarit on
+poistettu create_board metodissa, sekä label-elementtien tyyliä on muutettu. 
+Ruudut on asetettu aluksi valkoisiksi ja niiden reunat mustiksi.
+
+Siirtosuunnan valitseminen:
+
+Laattojen siirron suunnan valitseminen on toteutettu pelkästään painonappien avulla. Painonapit
+asetetaan setup_widgets-metodissa disabled-tilaan, kun peli ei ole käynnissä ja enabled-tilaan, 
+kun on. Kukin nappi on yhdistetty omaan metodiinsa ja nämä metodit kutsuvat yleistä move-metodia, 
+joka toteuttaa siirron riippuen sen kutsujasta. Tässä hyödynnetään Gameboard-luokan Coords-vakioita 
+LEFT, RIGHT, UP ja DOWN. Kuhunkin nappiin on liitetty nuolen kuva, joka kuvaa siirtosuuntaa. 
+Tästä lisää alempana lisäominaisuuksissa.
+
+Peliruudun päivittäminen:
+
+Kun käyttäjä painaa siirtonappia, kutsuu tämä metodia move. Move tekee siirtoon liittyvät muutokset
+gameboard_ attribuuttiin Gameboard-luokan avulla. Move kutsuu metodia update_gameboard. 
+Update_gameboard käy läpi pelilaudan eli labels_ ja tiles_ tuplavektorit. Se hakee näissä muutosten
+jälkeen olevat arvot ja muuttaa ne pelilaudalle. Lisäksi se vaihtaa laattojen väriä niillä
+olevien arvojen mukaan. Tästä enemmän lisäominaisuuksissa.
+
+Peli ilmoittaa voitosta ja häviöstä:
+
+Jokaisella siirrolla kutsutaan metodia move. Move kutsuu Gameboard-luokan metodia move, joka
+myös tarkastaa, onko peli hävitty. Tämän jälkeen tarkastetaan Gameboard-luokan metodilla is_full,
+onko pelilauta täynnä eli onko hävitty. Jos ei ole voitettu tai hävitty, luodaan laudalle uusi 
+ruutu Gameboardin metodilla new_value. Jos peli on hävitty tai voitettu, kutsutaan metodia
+won_or_lost, jossa parametsina on bool attribuutti lost = true. Jos peli hävittiin, sijoitetaan
+true ja false jos voitettiin. Metodi won_or_lost tulostaa textBrowser-elementtiin tämän perusteella
+voitto- tai häviötekstin. Lisäksi asetetaan siirtonapit disabled-tilaan ja pysäytetään ajastin.
+
+Pelin toiminta vaihtelevalla määrällä ruutuja:
+
+Kuten aikaisemmin vähän todettiinkin, peli toimii yhtälailla vaikka vakion SIZE arvoa muutetaan.
+Pelilaudan koko on aina kiinteä ja laattojen määrä lasketaan vakion SIZE avulla. Mitä pienempi
+SIZE on, sitä suurempia laatat ovat ja toisinpäin.
+
+Pelin aloittaminen uudestaan reset-napilla, sekä ready-napin toiminta:
+
+Pelin käyttöliittymään on luotu nappi reset_button, joka alustetaan setup_widgets metodissa
+disabled tilaan. Kun peli on aloitettu ready_button napilla, reset_button tulee aktiiviseksi.
+reset-napin painamiselle on oma metodi, joka muuttaa siirtonapit disabled-tilaan, pysäyttää ja
+nollaa ajastimen (lisäominaisuuksissa), asettaa spinbox-elementit enabled-tilaan ja päivittää
+textBrowser-tekstin, nollaa pelilaudan ja päivittää sen.
+
+Ready nappi taas tekee päinvastaiset toimenpiteet. Se lisäksi asettaa attribuutille goal_value
+arvon käyttäjän asettaman arvon perusteella. Lisäksi se aloittaa pelin toiminnan start_game metodilla.
+
+Start_game metodi ottaa huomioon luokan bool attribuutin startup_, joka alussa on asetettu arvoon true.
+Sen avulla voidaan tarkastaa, aloitetaanko peli ensimmäistä kertaa vai ei. Kun peli on kerran aloitettu,
+asetetaan se arvoon false. Jos peli aloitetaan ensimmäistä kertaa, luodaan uudet Numbertile-oliot 
+Gameboard-luokassa, muuten asetetaan olemassa olevien laattojen arvot nollaan uudella metodilla 
+fill_with_zeros ja luodaan sitten uudet arvot satunnaisesti. Gameboard-luokan metodia fill on muokattu.
+
+Muutokset Gameboard- ja Numbertile-luokkiin:
+
+Gameboard luokkaan on lisätty metodi fill_with_zeros, joka
+täyttää pelilaudan nollilla eli tekee siitä tyhjän. Metodia fill on muutettu siten, että sille
+voi antaa parametrin startup liittyen siihen, onko alustus ensimmäinen vai ei. Numbertile-luokkaan
+on lisätty metodi return value, joka palauttaa kyseisellä laatalla olevan arvon. Toinen metodi on
+set_value_to_zero, joka muuttaa laatalla olevan arvon nollaksi eli tekee laatasta tyhjän.
+-------------------------------------------------------------------------------------------------------------
+LISÄOMINAISUUDET:
+
+2. Eri luvuilla on eri värit:
+
+Pelissä on värejä default voittoarvoon eli 2048 asti. Tämän jälkeen värit asetetaan samaksi kuin 2048
+eli kultaisiksi. Tarvittavat värit on asetettu map tietorakenteeseen colors_, joka koostuu kokonaisluvusta
+ja QColor väristä. Tietyllä arvolle kuuluva väri haetaan mapista sen arvon perusteella. Jokaisen siirron
+ja pelilaudan päivityksen jälkeen laudan värit päivitetään metodissa update_gameboard. Metodi käy
+läpi laudan tiles_ vektorin avulla ja asettaa sen arvolle kuuluvan värin laatalle setBrush komennolla.
+Tyhjien laattojen eli joiden arvo on 0, väri on valkoinen.
+
+3. Käytetään kuvia siirtonappien suunnan esittämiseen:
+
+Laattojen siirtonapeille on asetettu nuolen png-kuvat, jotka kuvaavat niiden suuntaa. Kuvien koolle
+on vakio nimeltä IMAGE_SIZE. Kuvat löytyvät ohjelman resurssikansiosta Resources. Niiden osoitteet
+on määritetty mainwindow.qrc tiedostossa. Kuvat asetetaan napeille metodissa setup_button_images.
+Kuvien nimille on vektori arrows. Kuvien reitille ja tyypille on vakiot PREFIX ja SUFFIX. Kuvat
+muutetaan QPixmap-olioiksi ja skaalataan IMAGE_SIZE vakion avulla ja lopulta asetetaan napeille.
+
+4. Pelissä on ajastin, joka kertoo siihen mennessä käytetyn ajan:
+
+Pelissä on osoitin timer_ QTimer-olioon ja aikaan liittyvä attribuutti seconds_. Pelin ylälaidassa 
+on ajastin, jossa näytetään meneillään olevan pelin käytetty aika minuutteina ja sekunteina.
+Metodissa setup_widgets ajastimen näytöt alustetaan nolliksi, niiden taustavärit muutetaan valkoisiksi,
+ajastimen väli muutetaan sekunnin väleiksi, sekä ajastin yhdistetään metodiin on_timeout. Ajastin 
+pysäytetään reset-nappia painettaessa ja käynnistetään ready-nappia painettaessa. Ajastimen ja 
+pelin voi pysäyttää ja jatkaa pause-napilla pause_button (alempana lisää tarkemmin). 
+Reset-nappia painettaessa lisäksi palautetaan seconds_ arvo nollaan. 
+on_timeout metodia kutsutaan sekunnin välein. Tämä metodi lisää aina yhden sekunnin, 
+sekä päivittää nykyiset minuutit ja sekunnit minute_lcdnumber ja second_lcdnumber- elementteihin.
+
+10. Ohjelma ei salli tavoitteeksi muita kuin kakkosen potensseja:
+
+Mahdollisten väärien voittoarvojen syöttö on ratkaistu siten, että goal_spinbox-elementtiin ei
+voi syöttää kuin kakkosen potensseja. Tällöin  mahdollisia virhearvoja ei tarvitse tarkastaa, 
+esimerkiksi arvo 2048 saadaan asettamalla spinboxiin arvo 11, koska 2^11 = 2048. Goal_spinbox
+asetettu välille 2 - (SIZE * SIZE), jossa SIZE on sivun pituus, jolloin SIZE * SIZE on teoreettinen
+maksimiarvo tavoitearvolle. Alkuarvo goal_spinboxilla on 11 = 2048. Peli aloitettaessa asetettu
+tavoiteluku asetetaan attribuuttiin goal_value_. 
+
+13. Pelissä on pause-nappula, jolla ajanoton saa pysäytettyä ja jatkettua:
+
+Ajastimen ja pelin voi pysäyttää ja jatkaa pause-napilla pause_button. Tähän liittyy attribuutti 
+is_paused ja metodi on_pause_button_clicked. Nappia painettaessa ajastin pysähtyy tai menee päälle 
+riippuen siitä, jatketaan peliä vai ei. Napilla voi myös jatkaa peliä, joten se on kaksitoiminen. 
+Jos peli pysäytetään, asetetaan eri napit ja spinboxit disabled-tilaan ja lisätään teksti, 
+jossa kerrotaan pausesta. Lisäksi muutetaan nappiin tekti Continue, jotta käyttäjä ymmärtää, 
+että tästä voidaan myös jatkaa peliä. Jos peliä jatketaan asetetaan napit enabled-tilaan, 
+muutetaan napin tekstiksi Pause ja aloiteaan ajastin jatkamaan samasta aikasemmasta arvosta. 
+Molemmissa toimenpiteissä ilmoitetaan tilasta myös textBrowser-elementissä tekstillä. 
