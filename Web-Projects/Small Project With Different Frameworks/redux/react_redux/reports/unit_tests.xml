@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="24" failures="4" errors="0" time="23.88">
+    <testsuite name="components/__tests__/ListPlayer.test.jsx" timestamp="2024-02-09T10:21:45.218Z" hostname="DESKTOP-TI7BD5M" tests="4" failures="4" errors="0" skipped="0" time="0.03">
+        <testcase classname="components/__tests__/ListPlayer.test.jsx" name="ListPlayer &gt; renders a list item with the player&apos;s id as its id" time="0.021">
+            <system-err>
+Error: Uncaught [TypeError: Cannot read properties of undefined (reading &apos;id&apos;)]
+    at reportException (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\helpers\runtime-script-errors.js:66:24)
+    at innerInvokeEventListeners (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:353:9)
+    at invokeEventListeners (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:286:3)
+    at HTMLUnknownElementImpl._dispatch (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:233:9)
+    at HTMLUnknownElementImpl.dispatchEvent (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:104:17)
+    at HTMLUnknownElement.dispatchEvent (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\generated\EventTarget.js:241:34)
+    at Object.invokeGuardedCallbackDev (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\react-dom\cjs\react-dom.development.js:4213:16)
+    at invokeGuardedCallback (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\react-dom\cjs\react-dom.development.js:4277:31)
+    at beginWork$1 (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\react-dom\cjs\react-dom.development.js:27451:7)
+    at performUnitOfWork (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\react-dom\cjs\react-dom.development.js:26560:12) TypeError: Cannot read properties of undefined (reading &apos;id&apos;)
+    at ListPlayer [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39msrc\components\ListPlayer.jsx:18:30[90m)[39m
+    at renderWithHooks [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom.development.js:16305:18[90m)[39m
+    at mountIndeterminateComponent [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom.development.js:20074:13[90m)[39m
+    at beginWork [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom.development.js:21587:16[90m)[39m
+    at HTMLUnknownElement.callCallback [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom.development.js:4164:14[90m)[39m
+    at HTMLUnknownElement.callTheUserObjectsOperation [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\generated\EventListener.js:26:30[90m)[39m
+    at innerInvokeEventListeners [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\events\EventTarget-impl.js:350:25[90m)[39m
+    at invokeEventListeners [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\events\EventTarget-impl.js:286:3[90m)[39m
+    at HTMLUnknownElementImpl._dispatch [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\events\EventTarget-impl.js:233:9[90m)[39m
+    at HTMLUnknownElementImpl.dispatchEvent [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\events\EventTarget-impl.js:104:17[90m)[39m
+Error: Uncaught [TypeError: Cannot read properties of undefined (reading &apos;id&apos;)]
+    at reportException (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\helpers\runtime-script-errors.js:66:24)
+    at innerInvokeEventListeners (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:353:9)
+    at invokeEventListeners (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:286:3)
+    at HTMLUnknownElementImpl._dispatch (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:233:9)
+    at HTMLUnknownElementImpl.dispatchEvent (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:104:17)
+    at HTMLUnknownElement.dispatchEvent (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\generated\EventTarget.js:241:34)
+    at Object.invokeGuardedCallbackDev (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\react-dom\cjs\react-dom.development.js:4213:16)
+    at invokeGuardedCallback (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\react-dom\cjs\react-dom.development.js:4277:31)
+    at beginWork$1 (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\react-dom\cjs\react-dom.development.js:27451:7)
+    at performUnitOfWork (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\react-dom\cjs\react-dom.development.js:26560:12) TypeError: Cannot read properties of undefined (reading &apos;id&apos;)
+    at ListPlayer [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39msrc\components\ListPlayer.jsx:18:30[90m)[39m
+    at renderWithHooks [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom.development.js:16305:18[90m)[39m
+    at mountIndeterminateComponent [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom.development.js:20074:13[90m)[39m
+    at beginWork [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom.development.js:21587:16[90m)[39m
+    at HTMLUnknownElement.callCallback [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom.development.js:4164:14[90m)[39m
+    at HTMLUnknownElement.callTheUserObjectsOperation [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\generated\EventListener.js:26:30[90m)[39m
+    at innerInvokeEventListeners [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\events\EventTarget-impl.js:350:25[90m)[39m
+    at invokeEventListeners [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\events\EventTarget-impl.js:286:3[90m)[39m
+    at HTMLUnknownElementImpl._dispatch [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\events\EventTarget-impl.js:233:9[90m)[39m
+    at HTMLUnknownElementImpl.dispatchEvent [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\events\EventTarget-impl.js:104:17[90m)[39m
+The above error occurred in the &lt;ListPlayer&gt; component:
+
+    at ListPlayer (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\src\components\ListPlayer.jsx:3:23)
+    at Provider (file:///D:/OneDrive%20-%20TUNI.fi/2023-2024/Periodit%203-4/Advanced%20web%20front-ends/nctesa/redux/react_redux/node_modules/react-redux/dist/react-redux.mjs:1032:3)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+
+            </system-err>
+            <failure message="Cannot read properties of undefined (reading &apos;id&apos;)" type="TypeError">
+TypeError: Cannot read properties of undefined (reading &apos;id&apos;)
+ ❯ ListPlayer components/ListPlayer.jsx:18:30
+ ❯ renderWithHooks ../node_modules/react-dom/cjs/react-dom.development.js:16305:18
+ ❯ mountIndeterminateComponent ../node_modules/react-dom/cjs/react-dom.development.js:20074:13
+ ❯ beginWork ../node_modules/react-dom/cjs/react-dom.development.js:21587:16
+ ❯ beginWork$1 ../node_modules/react-dom/cjs/react-dom.development.js:27426:14
+ ❯ performUnitOfWork ../node_modules/react-dom/cjs/react-dom.development.js:26560:12
+ ❯ workLoopSync ../node_modules/react-dom/cjs/react-dom.development.js:26466:5
+ ❯ renderRootSync ../node_modules/react-dom/cjs/react-dom.development.js:26434:7
+ ❯ recoverFromConcurrentError ../node_modules/react-dom/cjs/react-dom.development.js:25850:20
+ ❯ performConcurrentWorkOnRoot ../node_modules/react-dom/cjs/react-dom.development.js:25750:22
+            </failure>
+            <failure message="Cannot read properties of undefined (reading &apos;unmount&apos;)" type="TypeError">
+TypeError: Cannot read properties of undefined (reading &apos;unmount&apos;)
+ ❯ components/__tests__/ListPlayer.test.jsx:28:15
+            </failure>
+        </testcase>
+        <testcase classname="components/__tests__/ListPlayer.test.jsx" name="ListPlayer &gt; displays the player name inside the anchor element" time="0.002">
+            <system-err>
+Error: Uncaught [TypeError: Cannot read properties of undefined (reading &apos;id&apos;)]
+    at reportException (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\helpers\runtime-script-errors.js:66:24)
+    at innerInvokeEventListeners (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:353:9)
+    at invokeEventListeners (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:286:3)
+    at HTMLUnknownElementImpl._dispatch (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:233:9)
+    at HTMLUnknownElementImpl.dispatchEvent (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:104:17)
+    at HTMLUnknownElement.dispatchEvent (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\generated\EventTarget.js:241:34)
+    at Object.invokeGuardedCallbackDev (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\react-dom\cjs\react-dom.development.js:4213:16)
+    at invokeGuardedCallback (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\react-dom\cjs\react-dom.development.js:4277:31)
+    at beginWork$1 (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\react-dom\cjs\react-dom.development.js:27451:7)
+    at performUnitOfWork (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\react-dom\cjs\react-dom.development.js:26560:12) TypeError: Cannot read properties of undefined (reading &apos;id&apos;)
+    at ListPlayer [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39msrc\components\ListPlayer.jsx:18:30[90m)[39m
+    at renderWithHooks [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom.development.js:16305:18[90m)[39m
+    at mountIndeterminateComponent [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom.development.js:20074:13[90m)[39m
+    at beginWork [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom.development.js:21587:16[90m)[39m
+    at HTMLUnknownElement.callCallback [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom.development.js:4164:14[90m)[39m
+    at HTMLUnknownElement.callTheUserObjectsOperation [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\generated\EventListener.js:26:30[90m)[39m
+    at innerInvokeEventListeners [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\events\EventTarget-impl.js:350:25[90m)[39m
+    at invokeEventListeners [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\events\EventTarget-impl.js:286:3[90m)[39m
+    at HTMLUnknownElementImpl._dispatch [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\events\EventTarget-impl.js:233:9[90m)[39m
+    at HTMLUnknownElementImpl.dispatchEvent [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\events\EventTarget-impl.js:104:17[90m)[39m
+Error: Uncaught [TypeError: Cannot read properties of undefined (reading &apos;id&apos;)]
+    at reportException (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\helpers\runtime-script-errors.js:66:24)
+    at innerInvokeEventListeners (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:353:9)
+    at invokeEventListeners (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:286:3)
+    at HTMLUnknownElementImpl._dispatch (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:233:9)
+    at HTMLUnknownElementImpl.dispatchEvent (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:104:17)
+    at HTMLUnknownElement.dispatchEvent (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\generated\EventTarget.js:241:34)
+    at Object.invokeGuardedCallbackDev (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\react-dom\cjs\react-dom.development.js:4213:16)
+    at invokeGuardedCallback (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\react-dom\cjs\react-dom.development.js:4277:31)
+    at beginWork$1 (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\react-dom\cjs\react-dom.development.js:27451:7)
+    at performUnitOfWork (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\react-dom\cjs\react-dom.development.js:26560:12) TypeError: Cannot read properties of undefined (reading &apos;id&apos;)
+    at ListPlayer [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39msrc\components\ListPlayer.jsx:18:30[90m)[39m
+    at renderWithHooks [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom.development.js:16305:18[90m)[39m
+    at mountIndeterminateComponent [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom.development.js:20074:13[90m)[39m
+    at beginWork [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom.development.js:21587:16[90m)[39m
+    at HTMLUnknownElement.callCallback [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom.development.js:4164:14[90m)[39m
+    at HTMLUnknownElement.callTheUserObjectsOperation [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\generated\EventListener.js:26:30[90m)[39m
+    at innerInvokeEventListeners [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\events\EventTarget-impl.js:350:25[90m)[39m
+    at invokeEventListeners [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\events\EventTarget-impl.js:286:3[90m)[39m
+    at HTMLUnknownElementImpl._dispatch [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\events\EventTarget-impl.js:233:9[90m)[39m
+    at HTMLUnknownElementImpl.dispatchEvent [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\events\EventTarget-impl.js:104:17[90m)[39m
+The above error occurred in the &lt;ListPlayer&gt; component:
+
+    at ListPlayer (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\src\components\ListPlayer.jsx:3:23)
+    at Provider (file:///D:/OneDrive%20-%20TUNI.fi/2023-2024/Periodit%203-4/Advanced%20web%20front-ends/nctesa/redux/react_redux/node_modules/react-redux/dist/react-redux.mjs:1032:3)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+
+            </system-err>
+            <failure message="Cannot read properties of undefined (reading &apos;id&apos;)" type="TypeError">
+TypeError: Cannot read properties of undefined (reading &apos;id&apos;)
+ ❯ ListPlayer components/ListPlayer.jsx:18:30
+ ❯ renderWithHooks ../node_modules/react-dom/cjs/react-dom.development.js:16305:18
+ ❯ mountIndeterminateComponent ../node_modules/react-dom/cjs/react-dom.development.js:20074:13
+ ❯ beginWork ../node_modules/react-dom/cjs/react-dom.development.js:21587:16
+ ❯ beginWork$1 ../node_modules/react-dom/cjs/react-dom.development.js:27426:14
+ ❯ performUnitOfWork ../node_modules/react-dom/cjs/react-dom.development.js:26560:12
+ ❯ workLoopSync ../node_modules/react-dom/cjs/react-dom.development.js:26466:5
+ ❯ renderRootSync ../node_modules/react-dom/cjs/react-dom.development.js:26434:7
+ ❯ recoverFromConcurrentError ../node_modules/react-dom/cjs/react-dom.development.js:25850:20
+ ❯ performConcurrentWorkOnRoot ../node_modules/react-dom/cjs/react-dom.development.js:25750:22
+            </failure>
+            <failure message="Cannot read properties of undefined (reading &apos;unmount&apos;)" type="TypeError">
+TypeError: Cannot read properties of undefined (reading &apos;unmount&apos;)
+ ❯ components/__tests__/ListPlayer.test.jsx:28:15
+            </failure>
+        </testcase>
+        <testcase classname="components/__tests__/ListPlayer.test.jsx" name="ListPlayer &gt; calls the onClick prop with the player id when the link is clicked" time="0.003">
+            <system-err>
+Error: Uncaught [TypeError: Cannot read properties of undefined (reading &apos;id&apos;)]
+    at reportException (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\helpers\runtime-script-errors.js:66:24)
+    at innerInvokeEventListeners (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:353:9)
+    at invokeEventListeners (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:286:3)
+    at HTMLUnknownElementImpl._dispatch (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:233:9)
+    at HTMLUnknownElementImpl.dispatchEvent (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:104:17)
+    at HTMLUnknownElement.dispatchEvent (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\generated\EventTarget.js:241:34)
+    at Object.invokeGuardedCallbackDev (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\react-dom\cjs\react-dom.development.js:4213:16)
+    at invokeGuardedCallback (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\react-dom\cjs\react-dom.development.js:4277:31)
+    at beginWork$1 (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\react-dom\cjs\react-dom.development.js:27451:7)
+    at performUnitOfWork (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\react-dom\cjs\react-dom.development.js:26560:12) TypeError: Cannot read properties of undefined (reading &apos;id&apos;)
+    at ListPlayer [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39msrc\components\ListPlayer.jsx:18:30[90m)[39m
+    at renderWithHooks [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom.development.js:16305:18[90m)[39m
+    at mountIndeterminateComponent [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom.development.js:20074:13[90m)[39m
+    at beginWork [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom.development.js:21587:16[90m)[39m
+    at HTMLUnknownElement.callCallback [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom.development.js:4164:14[90m)[39m
+    at HTMLUnknownElement.callTheUserObjectsOperation [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\generated\EventListener.js:26:30[90m)[39m
+    at innerInvokeEventListeners [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\events\EventTarget-impl.js:350:25[90m)[39m
+    at invokeEventListeners [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\events\EventTarget-impl.js:286:3[90m)[39m
+    at HTMLUnknownElementImpl._dispatch [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\events\EventTarget-impl.js:233:9[90m)[39m
+    at HTMLUnknownElementImpl.dispatchEvent [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\events\EventTarget-impl.js:104:17[90m)[39m
+Error: Uncaught [TypeError: Cannot read properties of undefined (reading &apos;id&apos;)]
+    at reportException (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\helpers\runtime-script-errors.js:66:24)
+    at innerInvokeEventListeners (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:353:9)
+    at invokeEventListeners (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:286:3)
+    at HTMLUnknownElementImpl._dispatch (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:233:9)
+    at HTMLUnknownElementImpl.dispatchEvent (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:104:17)
+    at HTMLUnknownElement.dispatchEvent (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\generated\EventTarget.js:241:34)
+    at Object.invokeGuardedCallbackDev (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\react-dom\cjs\react-dom.development.js:4213:16)
+    at invokeGuardedCallback (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\react-dom\cjs\react-dom.development.js:4277:31)
+    at beginWork$1 (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\react-dom\cjs\react-dom.development.js:27451:7)
+    at performUnitOfWork (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\react-dom\cjs\react-dom.development.js:26560:12) TypeError: Cannot read properties of undefined (reading &apos;id&apos;)
+    at ListPlayer [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39msrc\components\ListPlayer.jsx:18:30[90m)[39m
+    at renderWithHooks [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom.development.js:16305:18[90m)[39m
+    at mountIndeterminateComponent [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom.development.js:20074:13[90m)[39m
+    at beginWork [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom.development.js:21587:16[90m)[39m
+    at HTMLUnknownElement.callCallback [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom.development.js:4164:14[90m)[39m
+    at HTMLUnknownElement.callTheUserObjectsOperation [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\generated\EventListener.js:26:30[90m)[39m
+    at innerInvokeEventListeners [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\events\EventTarget-impl.js:350:25[90m)[39m
+    at invokeEventListeners [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\events\EventTarget-impl.js:286:3[90m)[39m
+    at HTMLUnknownElementImpl._dispatch [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\events\EventTarget-impl.js:233:9[90m)[39m
+    at HTMLUnknownElementImpl.dispatchEvent [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\events\EventTarget-impl.js:104:17[90m)[39m
+The above error occurred in the &lt;ListPlayer&gt; component:
+
+    at ListPlayer (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\src\components\ListPlayer.jsx:3:23)
+    at Provider (file:///D:/OneDrive%20-%20TUNI.fi/2023-2024/Periodit%203-4/Advanced%20web%20front-ends/nctesa/redux/react_redux/node_modules/react-redux/dist/react-redux.mjs:1032:3)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+
+            </system-err>
+            <failure message="Cannot read properties of undefined (reading &apos;id&apos;)" type="TypeError">
+TypeError: Cannot read properties of undefined (reading &apos;id&apos;)
+ ❯ ListPlayer components/ListPlayer.jsx:18:30
+ ❯ renderWithHooks ../node_modules/react-dom/cjs/react-dom.development.js:16305:18
+ ❯ mountIndeterminateComponent ../node_modules/react-dom/cjs/react-dom.development.js:20074:13
+ ❯ beginWork ../node_modules/react-dom/cjs/react-dom.development.js:21587:16
+ ❯ beginWork$1 ../node_modules/react-dom/cjs/react-dom.development.js:27426:14
+ ❯ performUnitOfWork ../node_modules/react-dom/cjs/react-dom.development.js:26560:12
+ ❯ workLoopSync ../node_modules/react-dom/cjs/react-dom.development.js:26466:5
+ ❯ renderRootSync ../node_modules/react-dom/cjs/react-dom.development.js:26434:7
+ ❯ recoverFromConcurrentError ../node_modules/react-dom/cjs/react-dom.development.js:25850:20
+ ❯ performConcurrentWorkOnRoot ../node_modules/react-dom/cjs/react-dom.development.js:25750:22
+            </failure>
+            <failure message="Cannot read properties of undefined (reading &apos;unmount&apos;)" type="TypeError">
+TypeError: Cannot read properties of undefined (reading &apos;unmount&apos;)
+ ❯ components/__tests__/ListPlayer.test.jsx:28:15
+            </failure>
+        </testcase>
+        <testcase classname="components/__tests__/ListPlayer.test.jsx" name="ListPlayer &gt; Accessibility: anchor should be focusable via the keyboard (by pressing the tab key)" time="0.002">
+            <system-err>
+Error: Uncaught [TypeError: Cannot read properties of undefined (reading &apos;id&apos;)]
+    at reportException (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\helpers\runtime-script-errors.js:66:24)
+    at innerInvokeEventListeners (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:353:9)
+    at invokeEventListeners (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:286:3)
+    at HTMLUnknownElementImpl._dispatch (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:233:9)
+    at HTMLUnknownElementImpl.dispatchEvent (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:104:17)
+    at HTMLUnknownElement.dispatchEvent (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\generated\EventTarget.js:241:34)
+    at Object.invokeGuardedCallbackDev (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\react-dom\cjs\react-dom.development.js:4213:16)
+    at invokeGuardedCallback (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\react-dom\cjs\react-dom.development.js:4277:31)
+    at beginWork$1 (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\react-dom\cjs\react-dom.development.js:27451:7)
+    at performUnitOfWork (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\react-dom\cjs\react-dom.development.js:26560:12) TypeError: Cannot read properties of undefined (reading &apos;id&apos;)
+    at ListPlayer [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39msrc\components\ListPlayer.jsx:18:30[90m)[39m
+    at renderWithHooks [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom.development.js:16305:18[90m)[39m
+    at mountIndeterminateComponent [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom.development.js:20074:13[90m)[39m
+    at beginWork [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom.development.js:21587:16[90m)[39m
+    at HTMLUnknownElement.callCallback [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom.development.js:4164:14[90m)[39m
+    at HTMLUnknownElement.callTheUserObjectsOperation [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\generated\EventListener.js:26:30[90m)[39m
+    at innerInvokeEventListeners [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\events\EventTarget-impl.js:350:25[90m)[39m
+    at invokeEventListeners [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\events\EventTarget-impl.js:286:3[90m)[39m
+    at HTMLUnknownElementImpl._dispatch [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\events\EventTarget-impl.js:233:9[90m)[39m
+    at HTMLUnknownElementImpl.dispatchEvent [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\events\EventTarget-impl.js:104:17[90m)[39m
+Error: Uncaught [TypeError: Cannot read properties of undefined (reading &apos;id&apos;)]
+    at reportException (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\helpers\runtime-script-errors.js:66:24)
+    at innerInvokeEventListeners (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:353:9)
+    at invokeEventListeners (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:286:3)
+    at HTMLUnknownElementImpl._dispatch (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:233:9)
+    at HTMLUnknownElementImpl.dispatchEvent (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:104:17)
+    at HTMLUnknownElement.dispatchEvent (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\jsdom\lib\jsdom\living\generated\EventTarget.js:241:34)
+    at Object.invokeGuardedCallbackDev (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\react-dom\cjs\react-dom.development.js:4213:16)
+    at invokeGuardedCallback (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\react-dom\cjs\react-dom.development.js:4277:31)
+    at beginWork$1 (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\react-dom\cjs\react-dom.development.js:27451:7)
+    at performUnitOfWork (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\node_modules\react-dom\cjs\react-dom.development.js:26560:12) TypeError: Cannot read properties of undefined (reading &apos;id&apos;)
+    at ListPlayer [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39msrc\components\ListPlayer.jsx:18:30[90m)[39m
+    at renderWithHooks [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom.development.js:16305:18[90m)[39m
+    at mountIndeterminateComponent [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom.development.js:20074:13[90m)[39m
+    at beginWork [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom.development.js:21587:16[90m)[39m
+    at HTMLUnknownElement.callCallback [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom.development.js:4164:14[90m)[39m
+    at HTMLUnknownElement.callTheUserObjectsOperation [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\generated\EventListener.js:26:30[90m)[39m
+    at innerInvokeEventListeners [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\events\EventTarget-impl.js:350:25[90m)[39m
+    at invokeEventListeners [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\events\EventTarget-impl.js:286:3[90m)[39m
+    at HTMLUnknownElementImpl._dispatch [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\events\EventTarget-impl.js:233:9[90m)[39m
+    at HTMLUnknownElementImpl.dispatchEvent [90m(D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\[39mnode_modules\[4mjsdom[24m\lib\jsdom\living\events\EventTarget-impl.js:104:17[90m)[39m
+The above error occurred in the &lt;ListPlayer&gt; component:
+
+    at ListPlayer (D:\OneDrive - TUNI.fi\2023-2024\Periodit 3-4\Advanced web front-ends\nctesa\redux\react_redux\src\components\ListPlayer.jsx:3:23)
+    at Provider (file:///D:/OneDrive%20-%20TUNI.fi/2023-2024/Periodit%203-4/Advanced%20web%20front-ends/nctesa/redux/react_redux/node_modules/react-redux/dist/react-redux.mjs:1032:3)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+
+            </system-err>
+            <failure message="Cannot read properties of undefined (reading &apos;id&apos;)" type="TypeError">
+TypeError: Cannot read properties of undefined (reading &apos;id&apos;)
+ ❯ ListPlayer components/ListPlayer.jsx:18:30
+ ❯ renderWithHooks ../node_modules/react-dom/cjs/react-dom.development.js:16305:18
+ ❯ mountIndeterminateComponent ../node_modules/react-dom/cjs/react-dom.development.js:20074:13
+ ❯ beginWork ../node_modules/react-dom/cjs/react-dom.development.js:21587:16
+ ❯ beginWork$1 ../node_modules/react-dom/cjs/react-dom.development.js:27426:14
+ ❯ performUnitOfWork ../node_modules/react-dom/cjs/react-dom.development.js:26560:12
+ ❯ workLoopSync ../node_modules/react-dom/cjs/react-dom.development.js:26466:5
+ ❯ renderRootSync ../node_modules/react-dom/cjs/react-dom.development.js:26434:7
+ ❯ recoverFromConcurrentError ../node_modules/react-dom/cjs/react-dom.development.js:25850:20
+ ❯ performConcurrentWorkOnRoot ../node_modules/react-dom/cjs/react-dom.development.js:25750:22
+            </failure>
+            <failure message="Cannot read properties of undefined (reading &apos;unmount&apos;)" type="TypeError">
+TypeError: Cannot read properties of undefined (reading &apos;unmount&apos;)
+ ❯ components/__tests__/ListPlayer.test.jsx:28:15
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="components/__tests__/ListPlayers.test.jsx" timestamp="2024-02-09T10:21:45.227Z" hostname="DESKTOP-TI7BD5M" tests="2" failures="0" errors="0" skipped="0" time="0.191">
+        <testcase classname="components/__tests__/ListPlayers.test.jsx" name="ListPlayers &gt; renders a list with id &quot;players-list&quot;" time="0.02">
+        </testcase>
+        <testcase classname="components/__tests__/ListPlayers.test.jsx" name="ListPlayers &gt; renders a ListPlayer for each player in the players prop" time="0.17">
+        </testcase>
+    </testsuite>
+    <testsuite name="components/__tests__/RequestStatus.test.jsx" timestamp="2024-02-09T10:21:45.228Z" hostname="DESKTOP-TI7BD5M" tests="2" failures="0" errors="0" skipped="0" time="0.024">
+        <testcase classname="components/__tests__/RequestStatus.test.jsx" name="RequestStatus component &gt; should render the component, inside which is an element with id &apos;request-status&apos;" time="0.019">
+        </testcase>
+        <testcase classname="components/__tests__/RequestStatus.test.jsx" name="RequestStatus component &gt; should render the component with the correct status" time="0.003">
+        </testcase>
+    </testsuite>
+    <testsuite name="components/__tests__/SelectedPlayer.test.jsx" timestamp="2024-02-09T10:21:45.228Z" hostname="DESKTOP-TI7BD5M" tests="3" failures="0" errors="0" skipped="0" time="0.028">
+        <testcase classname="components/__tests__/SelectedPlayer.test.jsx" name="SelectedPlayer component &gt; should render active player data correctly" time="0.023">
+        </testcase>
+        <testcase classname="components/__tests__/SelectedPlayer.test.jsx" name="SelectedPlayer component &gt; should render inactive player data correctly" time="0.002">
+        </testcase>
+        <testcase classname="components/__tests__/SelectedPlayer.test.jsx" name="SelectedPlayer component &gt; should not render if selected player is null" time="0.002">
+        </testcase>
+    </testsuite>
+    <testsuite name="redux/reducers/__tests__/Reducers.test.js" timestamp="2024-02-09T10:21:45.229Z" hostname="DESKTOP-TI7BD5M" tests="9" failures="0" errors="0" skipped="0" time="0.005">
+        <testcase classname="redux/reducers/__tests__/Reducers.test.js" name="playersReducer &gt; should return the initial state when no matching type in switch-case" time="0.002">
+        </testcase>
+        <testcase classname="redux/reducers/__tests__/Reducers.test.js" name="playersReducer &gt; should handle SET_PLAYERS by returning its payload" time="0">
+        </testcase>
+        <testcase classname="redux/reducers/__tests__/Reducers.test.js" name="statusReducer &gt; should return the initial state when no matching type in switch-case" time="0">
+        </testcase>
+        <testcase classname="redux/reducers/__tests__/Reducers.test.js" name="statusReducer &gt; Payload loading: should handle SET_STATUS by returning REQ_STATUS[loading]" time="0.001">
+        </testcase>
+        <testcase classname="redux/reducers/__tests__/Reducers.test.js" name="statusReducer &gt; Payload success: should handle SET_STATUS by returning REQ_STATUS[success]" time="0">
+        </testcase>
+        <testcase classname="redux/reducers/__tests__/Reducers.test.js" name="statusReducer &gt; Payload error: should handle SET_STATUS by returning REQ_STATUS[error]" time="0">
+        </testcase>
+        <testcase classname="redux/reducers/__tests__/Reducers.test.js" name="selectedPlayerReducer &gt; should return the initial state when no matching type in switch-case" time="0">
+        </testcase>
+        <testcase classname="redux/reducers/__tests__/Reducers.test.js" name="selectedPlayerReducer &gt; should handle SET_SELECTED_PLAYER by returning payload" time="0">
+        </testcase>
+        <testcase classname="redux/reducers/__tests__/Reducers.test.js" name="selectedPlayerReducer &gt; should handle CLEAR_SELECTED_PLAYER by returning payload" time="0">
+        </testcase>
+    </testsuite>
+    <testsuite name="redux/actionCreators/__tests__/ActionCreators.test.js" timestamp="2024-02-09T10:21:45.231Z" hostname="DESKTOP-TI7BD5M" tests="4" failures="0" errors="0" skipped="0" time="0.004">
+        <testcase classname="redux/actionCreators/__tests__/ActionCreators.test.js" name="Testing action creators &gt; setStatus: &gt; returns an action with type SET_REQUEST_STATUS to the frontends reducers along with the payload (String) that is given as a param" time="0.002">
+        </testcase>
+        <testcase classname="redux/actionCreators/__tests__/ActionCreators.test.js" name="Testing action creators &gt; setSelectedPlayer: &gt; returns an action with type SET_SELECTED_PLAYER to the frontends reducers along with the payload (Object) that is given as a param" time="0">
+        </testcase>
+        <testcase classname="redux/actionCreators/__tests__/ActionCreators.test.js" name="Testing action creators &gt; clearSelectedPlayer: &gt; returns an action with type CLEAR_SELECTED_PLAYER to the frontends reducers" time="0">
+        </testcase>
+        <testcase classname="redux/actionCreators/__tests__/ActionCreators.test.js" name="Testing action creators &gt; setPlayers: &gt; returns an action with type SET_PLAYERS to the frontends reducers" time="0">
+        </testcase>
+    </testsuite>
+</testsuites>

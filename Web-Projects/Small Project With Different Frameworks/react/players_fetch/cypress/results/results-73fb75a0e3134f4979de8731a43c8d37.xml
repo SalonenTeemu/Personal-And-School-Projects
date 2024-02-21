@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="1.029" tests="4" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-01-31T11:29:19" tests="0" file="cypress\e2e\getRequests.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Requests: GET" timestamp="2024-01-31T11:29:19" tests="4" time="1.025" failures="0">
+    <testcase name="Requests: GET should render players in a list with id &quot;#players-list&quot;" time="0.552" classname="should render players in a list with id &quot;#players-list&quot;">
+    </testcase>
+    <testcase name="Requests: GET should render players as focusable links inside list items" time="0.107" classname="should render players as focusable links inside list items">
+    </testcase>
+    <testcase name="Requests: GET should not show player status before a link is clicked" time="0.096" classname="should not show player status before a link is clicked">
+    </testcase>
+    <testcase name="Requests: GET should show player status when player link is clicked" time="0.207" classname="should show player status when player link is clicked">
+    </testcase>
+  </testsuite>
+</testsuites>

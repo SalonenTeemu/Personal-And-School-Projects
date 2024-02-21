@@ -1,8 +1,4 @@
 // Datastructures.hh
-//
-// Student name: Teemu Salonen
-// Student email: teemu.t.salonen@tuni.fi
-// Student number: K444339
 
 #ifndef DATASTRUCTURES_HH
 #define DATASTRUCTURES_HH

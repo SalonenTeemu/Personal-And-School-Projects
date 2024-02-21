@@ -1,20 +1,9 @@
 """
-COMP.CS.100 13.10. RPS-game
-Tekijä: Teemu Salonen
-Opiskelijanumero: K444339
-S-posti: teemu.t.salonen@tuni.fi
-
 Rock-Paper-Scissors game. The game has a main window where are buttons for
 different game types. The player can pick a first to 1, 3 or 5 game.
 Picking a game will open a new window for that selected game type.
 In the opened game window you can play the game, start a new game or quit to
 the main window.
-
-The programming style in the program isn't the best. The program could have
-probably been made a lot shorter for example using loops and functions because
-in the code there are many similar methods and other variables that do the same
-thing. Each window has its own class which are pretty much copies of each other.
-However this is how I got it to work the way I wanted with my skills.
 """
 
 from tkinter import *

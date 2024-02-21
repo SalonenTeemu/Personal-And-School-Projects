@@ -1,2 +1,2 @@
-# Personal-Projects
-Repository for my own personal programing projects.
+# Personal-And-School-Projects
+Repository for my personal and school programming projects.

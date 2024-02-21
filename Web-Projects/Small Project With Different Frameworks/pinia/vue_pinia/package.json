@@ -1,0 +1,36 @@
+{
+  "name": "players_fetch",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "author": {
+    "name": "Jaakko Rajala",
+    "email": "jaakko.rajala@tuni.fi"
+  },
+  "scripts": {
+    "frontend": "vite --open --port 5500",
+    "test:unit": "vitest --environment jsdom --root src/",
+    "test:e2e": "start-server-and-test 'vite dev --port 4173' http://localhost:4173 'cypress run --e2e'",
+    "test:e2e:dev": "start-server-and-test 'vite dev --port 4173' http://localhost:4173 'cypress open --e2e'"
+  },
+  "dependencies": {
+    "pinia": "^2.0.29",
+    "vue": "^3.4.15"
+  },
+  "devDependencies": {
+    "@pinia/testing": "^0.0.14",
+    "@testing-library/vue": "^6.6.1",
+    "@types/node": "^18.11.18",
+    "@vitejs/plugin-vue": "^5.0.3",
+    "@vue/test-utils": "^2.4.3",
+    "cypress": "^13.6.3",
+    "jsdom": "^24.0.0",
+    "msw": "^2.0.13",
+    "cypress-multi-reporters": "^1.6.4",
+    "junit-report-merger": "^6.0.3",
+    "mocha-junit-reporter": "^2.2.1",
+    "start-server-and-test": "^2.0.3",
+    "vite": "^5.0.12",
+    "vitest": "^1.2.1"
+  }
+}

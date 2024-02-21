@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="39" failures="1" errors="0" time="2.448">
+    <testsuite name="components/__tests__/AddPlayer.test.jsx" timestamp="2024-02-09T10:20:36.288Z" hostname="DESKTOP-TI7BD5M" tests="2" failures="0" errors="0" skipped="0" time="0.09">
+        <testcase classname="components/__tests__/AddPlayer.test.jsx" name="AddPlayer &gt; postPlayer is dispatched when form is submitted with played info" time="0.051">
+        </testcase>
+        <testcase classname="components/__tests__/AddPlayer.test.jsx" name="AddPlayer &gt; clears the input when the form is submitted" time="0.037">
+        </testcase>
+    </testsuite>
+    <testsuite name="components/__tests__/ListPlayer.test.jsx" timestamp="2024-02-09T10:20:36.290Z" hostname="DESKTOP-TI7BD5M" tests="3" failures="0" errors="0" skipped="0" time="0.188">
+        <testcase classname="components/__tests__/ListPlayer.test.jsx" name="ListPlayer &gt; renders a list item with the player&apos;s id as its id" time="0.089">
+        </testcase>
+        <testcase classname="components/__tests__/ListPlayer.test.jsx" name="ListPlayer &gt; displays the player name inside the anchor element" time="0.059">
+        </testcase>
+        <testcase classname="components/__tests__/ListPlayer.test.jsx" name="ListPlayer &gt; calls the onClick prop with the player id when the link is clicked" time="0.037">
+        </testcase>
+    </testsuite>
+    <testsuite name="components/__tests__/ListPlayers.test.jsx" timestamp="2024-02-09T10:20:36.291Z" hostname="DESKTOP-TI7BD5M" tests="2" failures="0" errors="0" skipped="0" time="0.126">
+        <testcase classname="components/__tests__/ListPlayers.test.jsx" name="ListPlayers &gt; renders a list with id &quot;players-list&quot;" time="0.035">
+        </testcase>
+        <testcase classname="components/__tests__/ListPlayers.test.jsx" name="ListPlayers &gt; renders a ListPlayer for each player in the players prop" time="0.088">
+        </testcase>
+    </testsuite>
+    <testsuite name="components/__tests__/RequestStatus.test.jsx" timestamp="2024-02-09T10:20:36.291Z" hostname="DESKTOP-TI7BD5M" tests="2" failures="0" errors="0" skipped="0" time="0.022">
+        <testcase classname="components/__tests__/RequestStatus.test.jsx" name="RequestStatus component &gt; should render the component, inside which is an element with id &apos;request-status&apos;" time="0.017">
+        </testcase>
+        <testcase classname="components/__tests__/RequestStatus.test.jsx" name="RequestStatus component &gt; should render the component with the correct status" time="0.003">
+        </testcase>
+    </testsuite>
+    <testsuite name="components/__tests__/SelectedPlayer.test.jsx" timestamp="2024-02-09T10:20:36.292Z" hostname="DESKTOP-TI7BD5M" tests="3" failures="0" errors="0" skipped="0" time="0.048">
+        <testcase classname="components/__tests__/SelectedPlayer.test.jsx" name="SelectedPlayer component &gt; should render active player data correctly" time="0.038">
+        </testcase>
+        <testcase classname="components/__tests__/SelectedPlayer.test.jsx" name="SelectedPlayer component &gt; should render inactive player data correctly" time="0.007">
+        </testcase>
+        <testcase classname="components/__tests__/SelectedPlayer.test.jsx" name="SelectedPlayer component &gt; should not render if selected player is null" time="0.002">
+        </testcase>
+    </testsuite>
+    <testsuite name="redux/actionCreators/__tests__/ActionCreators.test.js" timestamp="2024-02-09T10:20:36.293Z" hostname="DESKTOP-TI7BD5M" tests="6" failures="0" errors="0" skipped="0" time="0.006">
+        <testcase classname="redux/actionCreators/__tests__/ActionCreators.test.js" name="Testing action creators &gt; setStatus: &gt; returns an action with type SET_REQUEST_STATUS to the frontends reducers along with the payload (String) that is given as a param" time="0.002">
+        </testcase>
+        <testcase classname="redux/actionCreators/__tests__/ActionCreators.test.js" name="Testing action creators &gt; setSelectedPlayer: &gt; returns an action with type SET_SELECTED_PLAYER to the frontends reducers along with the payload (Object) that is given as a param" time="0">
+        </testcase>
+        <testcase classname="redux/actionCreators/__tests__/ActionCreators.test.js" name="Testing action creators &gt; clearSelectedPlayer: &gt; returns an action with type CLEAR_SELECTED_PLAYER to the frontends reducers" time="0.001">
+        </testcase>
+        <testcase classname="redux/actionCreators/__tests__/ActionCreators.test.js" name="Testing action creators &gt; setPlayers: &gt; returns an action with type SET_PLAYERS to the frontends reducers" time="0">
+        </testcase>
+        <testcase classname="redux/actionCreators/__tests__/ActionCreators.test.js" name="Testing action creators &gt; addPlayer: &gt; returns an action with type ADD_PLAYER to the frontends reducers" time="0">
+        </testcase>
+        <testcase classname="redux/actionCreators/__tests__/ActionCreators.test.js" name="Testing action creators &gt; removePlayer: &gt; returns an action with type REMOVE_PLAYER to the frontends reducers" time="0.001">
+        </testcase>
+    </testsuite>
+    <testsuite name="redux/reducers/__tests__/Reducers.test.js" timestamp="2024-02-09T10:20:36.294Z" hostname="DESKTOP-TI7BD5M" tests="11" failures="0" errors="0" skipped="0" time="0.007">
+        <testcase classname="redux/reducers/__tests__/Reducers.test.js" name="playersReducer &gt; should return the initial state when no matching type in switch-case" time="0.002">
+        </testcase>
+        <testcase classname="redux/reducers/__tests__/Reducers.test.js" name="playersReducer &gt; should handle SET_PLAYERS by returning its payload" time="0.001">
+        </testcase>
+        <testcase classname="redux/reducers/__tests__/Reducers.test.js" name="playersReducer &gt; should handle ADD_PLAYER by adding it to the state" time="0">
+        </testcase>
+        <testcase classname="redux/reducers/__tests__/Reducers.test.js" name="playersReducer &gt; should handle REMOVE_PLAYER by removing a player whose id === payload from the store" time="0">
+        </testcase>
+        <testcase classname="redux/reducers/__tests__/Reducers.test.js" name="statusReducer &gt; should return the initial state when no matching type in switch-case" time="0.001">
+        </testcase>
+        <testcase classname="redux/reducers/__tests__/Reducers.test.js" name="statusReducer &gt; Payload loading: should handle SET_STATUS by returning REQ_STATUS[loading]" time="0">
+        </testcase>
+        <testcase classname="redux/reducers/__tests__/Reducers.test.js" name="statusReducer &gt; Payload success: should handle SET_STATUS by returning REQ_STATUS[success]" time="0">
+        </testcase>
+        <testcase classname="redux/reducers/__tests__/Reducers.test.js" name="statusReducer &gt; Payload error: should handle SET_STATUS by returning REQ_STATUS[error]" time="0">
+        </testcase>
+        <testcase classname="redux/reducers/__tests__/Reducers.test.js" name="selectedPlayerReducer &gt; should return the initial state when no matching type in switch-case" time="0.001">
+        </testcase>
+        <testcase classname="redux/reducers/__tests__/Reducers.test.js" name="selectedPlayerReducer &gt; should handle SET_SELECTED_PLAYER by returning payload" time="0">
+        </testcase>
+        <testcase classname="redux/reducers/__tests__/Reducers.test.js" name="selectedPlayerReducer &gt; should handle CLEAR_SELECTED_PLAYER by returning payload" time="0">
+        </testcase>
+    </testsuite>
+    <testsuite name="redux/actionCreators/thunks/__tests__/Thunk.test.js" timestamp="2024-02-09T10:20:36.296Z" hostname="DESKTOP-TI7BD5M" tests="10" failures="1" errors="0" skipped="0" time="0.076">
+        <testcase classname="redux/actionCreators/thunks/__tests__/Thunk.test.js" name="Testing thunk action creators &gt; postPlayer: &gt; SUCCESS CASE: dispatch setStatus(REQ_STATUS.loading), setStatus(REQ_STATUS.success), addPlayer(expectedResponse) and clearSelectedPlayer()" time="0.039">
+            <failure message="expected [ { …(2) }, { …(2) }, { …(2) }, …(1) ] to deeply equal [ { …(2) }, { …(2) }, { …(2) }, …(1) ]" type="AssertionError">
+AssertionError: expected [ { …(2) }, { …(2) }, { …(2) }, …(1) ] to deeply equal [ { …(2) }, { …(2) }, { …(2) }, …(1) ]
+ ❯ redux/actionCreators/thunks/__tests__/Thunk.test.js:57:29
+            </failure>
+        </testcase>
+        <testcase classname="redux/actionCreators/thunks/__tests__/Thunk.test.js" name="Testing thunk action creators &gt; postPlayer: &gt; FAIL CASE: dispatch setStatus(REQ_STATUS.loading), setStatus(REQ_STATUS.error)" time="0.004">
+        </testcase>
+        <testcase classname="redux/actionCreators/thunks/__tests__/Thunk.test.js" name="Testing thunk action creators &gt; getPlayers: &gt; SUCCESS CASE: dispatch setStatus(REQ_STATUS.loading), setStatus(REQ_STATUS.success), setPlayers(expectedResponse)" time="0.005">
+        </testcase>
+        <testcase classname="redux/actionCreators/thunks/__tests__/Thunk.test.js" name="Testing thunk action creators &gt; getPlayers: &gt; FAIL CASE: dispatch setStatus(REQ_STATUS.loading), setStatus(REQ_STATUS.success)" time="0.002">
+        </testcase>
+        <testcase classname="redux/actionCreators/thunks/__tests__/Thunk.test.js" name="Testing thunk action creators &gt; getSelectedPlayer: &gt; SUCCESS CASE: dispatch setStatus(REQ_STATUS.loading), setStatus(REQ_STATUS.success), setSelectedPlayer(expectedResponse)" time="0.003">
+        </testcase>
+        <testcase classname="redux/actionCreators/thunks/__tests__/Thunk.test.js" name="Testing thunk action creators &gt; getSelectedPlayer: &gt; FAIL CASE: dispatch setStatus(REQ_STATUS.loading), setStatus(REQ_STATUS.error)" time="0.002">
+        </testcase>
+        <testcase classname="redux/actionCreators/thunks/__tests__/Thunk.test.js" name="Testing thunk action creators &gt; deleteSelectedPlayer: &gt; SUCCESS CASE: dispatch setStatus(REQ_STATUS.loading), setStatus(REQ_STATUS.success), removePlayer(selectedPlayer.id), clearSelectedPlayer()" time="0.004">
+        </testcase>
+        <testcase classname="redux/actionCreators/thunks/__tests__/Thunk.test.js" name="Testing thunk action creators &gt; deleteSelectedPlayer: &gt; FAIL CASE: dispatch setStatus(REQ_STATUS.loading), setStatus(REQ_STATUS.error)" time="0.005">
+        </testcase>
+        <testcase classname="redux/actionCreators/thunks/__tests__/Thunk.test.js" name="Testing thunk action creators &gt; updateSelectedPlayer: &gt; SUCCESS CASE: dispatch setStatus(REQ_STATUS.loading), setStatus(REQ_STATUS.success), updatePlayer(expectedResponse), clearSelectedPlayer()" time="0.005">
+        </testcase>
+        <testcase classname="redux/actionCreators/thunks/__tests__/Thunk.test.js" name="Testing thunk action creators &gt; updateSelectedPlayer: &gt; FAIL CASE: dispatch setStatus(REQ_STATUS.loading), setStatus(REQ_STATUS.error)" time="0.003">
+        </testcase>
+    </testsuite>
+</testsuites>

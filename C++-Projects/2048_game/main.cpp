@@ -13,11 +13,6 @@
  * ruutuja siten, että hän saavuttaa voittoarvon. Hän häviää jos pelilauta
  * täyttyy ruuduista. Tiedostossa instructions.txt on selitetty pelin toiminta
  * tarkemmin, sekä selitetty eri toiminnallisuudet ja lisäykset peliin.
- *
- * Nimi: Teemu Salonen
- * Opiskelijanumero: K444339
- * Käyttäjätunnus: nctesa
- * E-Mail: teemu.t.salonen@tuni.fi
  */
 
 #include "mainwindow.hh"

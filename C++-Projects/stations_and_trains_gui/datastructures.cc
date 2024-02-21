@@ -1,8 +1,4 @@
 // Datastructures.cc
-//
-// Student name: Teemu Salonen
-// Student email: teemu.t.salonen@tuni.fi
-// Student number: K444339
 
 #include "datastructures.hh"
 #include <random>

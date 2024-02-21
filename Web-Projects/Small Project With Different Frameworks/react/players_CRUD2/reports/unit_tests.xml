@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="5" failures="1" errors="0" time="21.846">
+    <testsuite name="components/__tests__/SelectedPlayer.test.jsx" timestamp="2024-01-31T15:17:14.428Z" hostname="DESKTOP-TI7BD5M" tests="5" failures="1" errors="0" skipped="0" time="0.156">
+        <testcase classname="components/__tests__/SelectedPlayer.test.jsx" name="SelectedPlayer &gt; displays the selected player information when a player is passed as a prop with correct ui" time="0.023">
+        </testcase>
+        <testcase classname="components/__tests__/SelectedPlayer.test.jsx" name="SelectedPlayer &gt; should not render if selected player is null" time="0.004">
+        </testcase>
+        <testcase classname="components/__tests__/SelectedPlayer.test.jsx" name="SelectedPlayer &gt; calls the handleDelete function with the player id when the delete button is clicked" time="0.006">
+        </testcase>
+        <testcase classname="components/__tests__/SelectedPlayer.test.jsx" name="SelectedPlayer &gt; calls the handleUpdate function with the updated player active state when the update button is clicked" time="0.01">
+            <failure message="expected false to be truthy" type="AssertionError">
+AssertionError: expected false to be truthy
+ ❯ components/__tests__/SelectedPlayer.test.jsx:81:57
+            </failure>
+        </testcase>
+        <testcase classname="components/__tests__/SelectedPlayer.test.jsx" name="SelectedPlayer &gt; should not call handleUpdate if checkbox is clicked twice (aka player state is not changed)" time="0.112">
+        </testcase>
+    </testsuite>
+</testsuites>
